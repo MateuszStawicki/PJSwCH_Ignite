@@ -10,18 +10,18 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebListener
-public class LoginServlet extends HttpServlet {
+public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         request.getRequestDispatcher("link.html").include(request, response);
-        String name = request.getParameter("name");
+        String login = request.getParameter("login");
 
         HttpSession session = request.getSession();
-        out.println("Welcome, " + name);
-        out.println("SessionId: " + session.getId());
-        session.setAttribute("name", name);
+        out.print("Witaj " + login);
+        out.print(", numer sesji: " + session.getId());
+        session.setAttribute("login", login);
         out.close();
     }
 }

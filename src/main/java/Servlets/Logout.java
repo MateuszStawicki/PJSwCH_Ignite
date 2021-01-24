@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class LogoutServlet extends HttpServlet {
+public class Logout extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
@@ -19,7 +19,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.invalidate();
 
-        out.print("You are successfully logged out!");
+        out.print("Wylogowywanie zakończone");
 
         out.close();
     }

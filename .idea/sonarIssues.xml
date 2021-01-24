@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/fragment.java">
           <value>
             <set />
@@ -128,6 +133,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/the-apache-ignite-book-master/WebClusterSession/src/main/java/ignite/LogIn.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../WebSessionMonitoring/out/artifacts/WebSessionMonitoring_war_exploded/WEB-INF/default-config.xml">
           <value>
             <set />
@@ -173,7 +183,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/out/artifacts/untitled_war_exploded/login.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Servlets/Login.java">
           <value>
             <set />
           </value>
@@ -183,7 +203,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Servlets/Logout.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Servlets/LogoutServlet.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Servlets/Profile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/Servlets/ProfileServlet.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/Servlets/Servlet.java">
           <value>
             <set />
           </value>

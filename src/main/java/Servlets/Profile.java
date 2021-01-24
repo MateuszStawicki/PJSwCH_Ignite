@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class ProfileServlet extends HttpServlet {
+public class Profile extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
@@ -16,13 +16,12 @@ public class ProfileServlet extends HttpServlet {
         request.getRequestDispatcher("link.html").include(request, response);
 
         HttpSession session = request.getSession(false);
-        if (session != null) {
-            String name = (String) session.getAttribute("name");
-
-            out.println("Hello, " + name );
-            out.print("SessionId: " + session.getId());
+        String login = (String) session.getAttribute("login");
+        if (login != null) {
+            out.println("Witaj " + login );
+            out.println(", numer sesji: " + session.getId());
         } else {
-            out.print("Please login first");
+            out.print("Najpierw musisz się zalogować");
             request.getRequestDispatcher("login.html").include(request, response);
         }
         out.close();
